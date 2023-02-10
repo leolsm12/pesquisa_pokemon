@@ -10,11 +10,13 @@ button.addEventListener("click", function() {
   
 fetch(url)
     .then((response) => response.json())
-    .then(jsonBody => {console.log(jsonBody)})
-      
+    .then(jsonBody => jsonBody.results)
+    .then((pokemons) => pokemons.map((pokeApi.getPokemonDetail))) 
+    .then((detailRequests) => Promise.all(detailRequests))
+    .then((pokemonsDetails) => pokemonsDetails)
 
      
     
     .catch(error => {console.error(error)})
+    console.log(pokemonsDetails)
 })
-    
