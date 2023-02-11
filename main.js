@@ -1,6 +1,21 @@
+class Pokemon {
+  number ;
+  name ;
+  type;
+  types = [];
+  photo;
+  evolutions = []; 
+  weight;
+  height;
+  stats = [];
+  stat =[];
+}
+
+
 
 const input = document.getElementById("nome");
 const button = document.getElementById("pesquisa");
+const pokemon = []
 
 button.addEventListener("click", function() {
   const searchTerm = input.value;
@@ -10,27 +25,36 @@ button.addEventListener("click", function() {
   
 fetch(url)
     .then((response) => response.json())
-    .then(jsonBody => {(jsonBody)})
-           
+    .then(jsonBody => {
+      const pokemon = new Pokemon()
+      pokemon.number = jsonBody.id
+      pokemon.name = jsonBody.name
+
+      const stats = jsonBody.stats.map((statsBase_stat) => statsBase_stat.stat.name)
+      const stat = jsonBody.stats.map((statsBase_stat) => statsBase_stat.base_stat)
+      const types = jsonBody.types.map((typeSlot) => typeSlot.type.name)
+      const evolutions = jsonBody.forms.map((formsName) => formsName.url)
+    
+      const [type] = types
+      pokemon.evolutions = evolutions
+
+      pokemon.stat = stat
+      pokemon.stats = stats
+
+      pokemon.types = types
+      pokemon.type = type
+      pokemon.photo = jsonBody.sprites.other.dream_world.front_default
+      pokemon.weight = jsonBody.weight
+      pokemon.height = jsonBody.height
+
+      console.log(pokemon)
+
+  
+    })
     .catch(error => {console.error(error)})
     
+    
 
-class pokemon {
-  constructor(name, weight, height) {
-      this.name = name;
-      this.weight = weight;
-      this.height = height;
-  }
-}
 
-let user = new Pokemon(
-  jsonBody.name,
-  jsonBody.weight,
-  jsonBody.height
-);
-
-console.log(user);
+    
 })
-// let name = jsonBody["name"];
-// let weight = jsonBody["weight"];
-// let height = jsonBody["height"];
