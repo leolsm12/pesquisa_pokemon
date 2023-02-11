@@ -9,7 +9,7 @@ button.addEventListener("click", function() {
 
   
   if(searchTerm == ''){
-    fetch(url)
+fetch(url)
     .then((response) => response.json())
     .then(jsonBody => jsonBody.results)
     .then((pokemons) => pokemons.map((getPokemonDetail)))
