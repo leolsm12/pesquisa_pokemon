@@ -7,3 +7,11 @@ header {
     justify-content: center;
     align-items: center;
 }
+.area > button{
+    width: 20%;
+    margin-left: 40%;
+    margin-top: 15px;
+}
+.area2 > input{
+    width: 20%;
+}
