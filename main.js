@@ -46,25 +46,47 @@ fetch(url)
             <div class="card" style="width: 18rem;">
                 <img src="${pokemon.photo}" alt="${pokemon.name}">
                 <div class="card-body">
-                  <h5 class="card-title">${pokemon.name}</h5>
-                  <h2 class="numero">#${pokemon.number}</h2>
-                    <ol class="types">
-                      ${pokemon.types.map((type) => `<li class="type${type}">${type}</li>`).join('')}
-                    </ol> 
-                    <p class="card-text">peso${pokemon.weight}</p>
-                    <p class="card-text">altura${pokemon.height}</p>
+                  <div class="container text-center">
+                    <div class="row">
+                      <div class="col">
+                        <h2 class="card-title">${pokemon.name}</h2>
+                      </div>
+                      <div class="col">
+                        <h3 class="numero">#${pokemon.number}</h3>
+                      </div>
+                    </div>
+                  </div>
+                  <ul class="types">
+                    ${pokemon.types.map((type) => `<li class="type${type}">${type}</li>`).join('')}
+                  </ul> 
+                  <div class="container text-center">
+                    <div class="row">
+                      <div class="col">
+                        <p class="card-text">peso: ${pokemon.weight} lbs.</p>
+                      </div>
+                      <div class="col">
+                        <p class="card-text">altura: ${pokemon.height} ft.</p>
+                      </div>
+                    </div>
+                  </div>
                 </div>
                 <div class="status">
-                  <div class="ata">
-                   ${pokemon.stats.map((stat) => `<p>${stat}</p>`).join('')}
-                  </div>
-                  <div class="pontos">
-                    ${pokemon.stat.map((stat) => `<p>${stat}</p>`).join('')}
-                  </div>                
-                </div>
+                  <div class="container text-center">
+                    <div class="row">
+                      <div class="col">
+                        ${pokemon.stats.map((stat) => `<p class="poder">${stat}:</p>`).join('')}
+                      </div>
+                      <div class="col">
+                        ${pokemon.stat.map((stat) => `<p class="valor">${stat}</p>`).join('')}
+                      </div>
+
+                    </div>
+                </div>                      
+                
 
             </div>    
-      </div>       
+      </div>
+          
 
 
       `;
