@@ -182,8 +182,8 @@ background-size: 150px 150px;
       conic-gradient(at 50% 10%,#0000 75%,#19191b 0) calc(3*30px) calc(3*30px),
       conic-gradient(at 50% 10%,#0000 75%,#19191b 0) calc(4*30px) calc(1*30px),
       #050532;
-background-size: 150px 150px;
-
+    background-size: 150px 150px;
+    
 
 }
 .rock {
@@ -216,7 +216,7 @@ background-size: 150px 150px;
       conic-gradient(at 50% 10%,#0000 75%,#9dc130 0) calc(3*30px) calc(3*30px),
       conic-gradient(at 50% 10%,#0000 75%,#9dc130 0) calc(4*30px) calc(1*30px),
       #1c951c;
-background-size: 150px 150px;
+    background-size: 150px 150px;
 
 
 }
@@ -233,7 +233,7 @@ background-size: 150px 150px;
       conic-gradient(at 50% 10%,#0000 75%,rgba(104, 112, 196, 0.61) 0) calc(3*30px) calc(3*30px),
       conic-gradient(at 50% 10%,#0000 75%,rgba(104, 112, 196, 0.61) 0) calc(4*30px) calc(1*30px),
       #ffffff;
-background-size: 150px 150px; ;
+    background-size: 150px 150px; ;
 }
 .steel {
     background:
@@ -248,7 +248,7 @@ background-size: 150px 150px; ;
       conic-gradient(at 50% 10%,#0000 75%,#5596a4 0) calc(3*30px) calc(3*30px),
       conic-gradient(at 50% 10%,#0000 75%,#5596a4 0) calc(4*30px) calc(1*30px),
       #797979;
-background-size: 150px 150px;
+    background-size: 150px 150px;
 
 
 }
@@ -265,7 +265,7 @@ background-size: 150px 150px;
       conic-gradient(at 50% 10%,#0000 75%,#0773c7 0) calc(3*30px) calc(3*30px),
       conic-gradient(at 50% 10%,#0000 75%,#0773c7 0) calc(4*30px) calc(1*30px),
       #e73b3b;
-background-size: 150px 150px; ;
+    background-size: 150px 150px; ;
 }
 .fairy {
     background:
@@ -280,5 +280,5 @@ background-size: 150px 150px; ;
       conic-gradient(at 50% 10%,#0000 75%,#ef97e6 0) calc(3*30px) calc(3*30px),
       conic-gradient(at 50% 10%,#0000 75%,#ef97e6 0) calc(4*30px) calc(1*30px),
       rgba(209, 60, 232, 0.86);
-background-size: 150px 150px;
+    background-size: 150px 150px;
 }
