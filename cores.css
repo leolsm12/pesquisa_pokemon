@@ -1,0 +1,284 @@
+.normal {
+    background-color:#9a9da1 ;
+    background:
+      conic-gradient(at 10% 50%,#0000 75%,#9a9da1 0),
+      conic-gradient(at 10% 50%,#0000 75%,#9a9da1 0) calc(1*30px) calc(3*30px),
+      conic-gradient(at 10% 50%,#0000 75%,#9a9da1 0) calc(2*30px) calc(1*30px),
+      conic-gradient(at 10% 50%,#0000 75%,#9a9da1 0) calc(3*30px) calc(4*30px),
+      conic-gradient(at 10% 50%,#0000 75%,#9a9da1 0) calc(4*30px) calc(2*30px),
+      conic-gradient(at 50% 10%,#0000 75%,#9a9da1 0) 0 calc(4*30px),
+      conic-gradient(at 50% 10%,#0000 75%,#9a9da1 0) calc(1*30px) calc(2*30px),
+      conic-gradient(at 50% 10%,#0000 75%,#9a9da1 0) calc(2*30px) 0,
+      conic-gradient(at 50% 10%,#0000 75%,#9a9da1 0) calc(3*30px) calc(3*30px),
+      conic-gradient(at 50% 10%,#0000 75%,#9a9da1 0) calc(4*30px) calc(1*30px),
+      #808080;
+      background-size: 150px 150px;
+}
+.grass {
+    background:
+      conic-gradient(at 10% 50%,#0000 75%,#5dbe62 0),
+      conic-gradient(at 10% 50%,#0000 75%,#5dbe62 0) calc(1*30px) calc(3*30px),
+      conic-gradient(at 10% 50%,#0000 75%,#5dbe62 0) calc(2*30px) calc(1*30px),
+      conic-gradient(at 10% 50%,#0000 75%,#5dbe62 0) calc(3*30px) calc(4*30px),
+      conic-gradient(at 10% 50%,#0000 75%,#5dbe62 0) calc(4*30px) calc(2*30px),
+      conic-gradient(at 50% 10%,#0000 75%,#5dbe62 0) 0 calc(4*30px),
+      conic-gradient(at 50% 10%,#0000 75%,#5dbe62 0) calc(1*30px) calc(2*30px),
+      conic-gradient(at 50% 10%,#0000 75%,#5dbe62 0) calc(2*30px) 0,
+      conic-gradient(at 50% 10%,#0000 75%,#5dbe62 0) calc(3*30px) calc(3*30px),
+      conic-gradient(at 50% 10%,#0000 75%,#5dbe62 0) calc(4*30px) calc(1*30px),
+      #5b8b5e;
+background-size: 150px 150px;
+}
+.fire {
+    background:
+      conic-gradient(at 10% 50%,#0000 75%,#f37900 0),
+      conic-gradient(at 10% 50%,#0000 75%,#f37900 0) calc(1*30px) calc(3*30px),
+      conic-gradient(at 10% 50%,#0000 75%,#f37900 0) calc(2*30px) calc(1*30px),
+      conic-gradient(at 10% 50%,#0000 75%,#f37900 0) calc(3*30px) calc(4*30px),
+      conic-gradient(at 10% 50%,#0000 75%,#f37900 0) calc(4*30px) calc(2*30px),
+      conic-gradient(at 50% 10%,#0000 75%,#f37900 0) 0 calc(4*30px),
+      conic-gradient(at 50% 10%,#0000 75%,#f37900 0) calc(1*30px) calc(2*30px),
+      conic-gradient(at 50% 10%,#0000 75%,#f37900 0) calc(2*30px) 0,
+      conic-gradient(at 50% 10%,#0000 75%,#f37900 0) calc(3*30px) calc(3*30px),
+      conic-gradient(at 50% 10%,#0000 75%,#f37900 0) calc(4*30px) calc(1*30px),
+      #e22121;
+background-size: 150px 150px;
+}
+.water {
+    background:
+      conic-gradient(at 10% 50%,#0000 75%,#559edf 0),
+      conic-gradient(at 10% 50%,#0000 75%,#559edf 0) calc(1*30px) calc(3*30px),
+      conic-gradient(at 10% 50%,#0000 75%,#559edf 0) calc(2*30px) calc(1*30px),
+      conic-gradient(at 10% 50%,#0000 75%,#559edf 0) calc(3*30px) calc(4*30px),
+      conic-gradient(at 10% 50%,#0000 75%,#559edf 0) calc(4*30px) calc(2*30px),
+      conic-gradient(at 50% 10%,#0000 75%,#559edf 0) 0 calc(4*30px),
+      conic-gradient(at 50% 10%,#0000 75%,#559edf 0) calc(1*30px) calc(2*30px),
+      conic-gradient(at 50% 10%,#0000 75%,#559edf 0) calc(2*30px) 0,
+      conic-gradient(at 50% 10%,#0000 75%,#559edf 0) calc(3*30px) calc(3*30px),
+      conic-gradient(at 50% 10%,#0000 75%,#559edf 0) calc(4*30px) calc(1*30px),
+      #22cde3;
+background-size: 150px 150px;
+}
+.electric {
+    background:
+      conic-gradient(at 10% 50%,#0000 75%,#edd643 0),
+      conic-gradient(at 10% 50%,#0000 75%,#edd643 0) calc(1*30px) calc(3*30px),
+      conic-gradient(at 10% 50%,#0000 75%,#edd643 0) calc(2*30px) calc(1*30px),
+      conic-gradient(at 10% 50%,#0000 75%,#edd643 0) calc(3*30px) calc(4*30px),
+      conic-gradient(at 10% 50%,#0000 75%,#edd643 0) calc(4*30px) calc(2*30px),
+      conic-gradient(at 50% 10%,#0000 75%,#edd643 0) 0 calc(4*30px),
+      conic-gradient(at 50% 10%,#0000 75%,#edd643 0) calc(1*30px) calc(2*30px),
+      conic-gradient(at 50% 10%,#0000 75%,#edd643 0) calc(2*30px) 0,
+      conic-gradient(at 50% 10%,#0000 75%,#edd643 0) calc(3*30px) calc(3*30px),
+      conic-gradient(at 50% 10%,#0000 75%,#edd643 0) calc(4*30px) calc(1*30px),
+      #e3d222;
+background-size: 150px 150px;
+}
+.ice {
+    background:
+      conic-gradient(at 10% 50%,#0000 75%,#42eded 0),
+      conic-gradient(at 10% 50%,#0000 75%,#42eded 0) calc(1*30px) calc(3*30px),
+      conic-gradient(at 10% 50%,#0000 75%,#42eded 0) calc(2*30px) calc(1*30px),
+      conic-gradient(at 10% 50%,#0000 75%,#42eded 0) calc(3*30px) calc(4*30px),
+      conic-gradient(at 10% 50%,#0000 75%,#42eded 0) calc(4*30px) calc(2*30px),
+      conic-gradient(at 50% 10%,#0000 75%,#42eded 0) 0 calc(4*30px),
+      conic-gradient(at 50% 10%,#0000 75%,#42eded 0) calc(1*30px) calc(2*30px),
+      conic-gradient(at 50% 10%,#0000 75%,#42eded 0) calc(2*30px) 0,
+      conic-gradient(at 50% 10%,#0000 75%,#42eded 0) calc(3*30px) calc(3*30px),
+      conic-gradient(at 50% 10%,#0000 75%,#42eded 0) calc(4*30px) calc(1*30px),
+      #2233e3;
+background-size: 150px 150px;
+}
+.ground {
+    background:
+      conic-gradient(at 10% 50%,#0000 75%,#d78555 0),
+      conic-gradient(at 10% 50%,#0000 75%,#d78555 0) calc(1*30px) calc(3*30px),
+      conic-gradient(at 10% 50%,#0000 75%,#d78555 0) calc(2*30px) calc(1*30px),
+      conic-gradient(at 10% 50%,#0000 75%,#d78555 0) calc(3*30px) calc(4*30px),
+      conic-gradient(at 10% 50%,#0000 75%,#d78555 0) calc(4*30px) calc(2*30px),
+      conic-gradient(at 50% 10%,#0000 75%,#d78555 0) 0 calc(4*30px),
+      conic-gradient(at 50% 10%,#0000 75%,#d78555 0) calc(1*30px) calc(2*30px),
+      conic-gradient(at 50% 10%,#0000 75%,#d78555 0) calc(2*30px) 0,
+      conic-gradient(at 50% 10%,#0000 75%,#d78555 0) calc(3*30px) calc(3*30px),
+      conic-gradient(at 50% 10%,#0000 75%,#d78555 0) calc(4*30px) calc(1*30px),
+      #624822;
+background-size: 150px 150px;
+
+}
+.flying {
+    background:
+      conic-gradient(at 10% 50%,#0000 75%,#9bb4e8 0),
+      conic-gradient(at 10% 50%,#0000 75%,#9bb4e8 0) calc(1*30px) calc(3*30px),
+      conic-gradient(at 10% 50%,#0000 75%,#9bb4e8 0) calc(2*30px) calc(1*30px),
+      conic-gradient(at 10% 50%,#0000 75%,#9bb4e8 0) calc(3*30px) calc(4*30px),
+      conic-gradient(at 10% 50%,#0000 75%,#9bb4e8 0) calc(4*30px) calc(2*30px),
+      conic-gradient(at 50% 10%,#0000 75%,#9bb4e8 0) 0 calc(4*30px),
+      conic-gradient(at 50% 10%,#0000 75%,#9bb4e8 0) calc(1*30px) calc(2*30px),
+      conic-gradient(at 50% 10%,#0000 75%,#9bb4e8 0) calc(2*30px) 0,
+      conic-gradient(at 50% 10%,#0000 75%,#9bb4e8 0) calc(3*30px) calc(3*30px),
+      conic-gradient(at 50% 10%,#0000 75%,#9bb4e8 0) calc(4*30px) calc(1*30px),
+      #cec8be;
+background-size: 150px 150px;
+
+
+}
+.poison {
+    background:
+      conic-gradient(at 10% 50%,#0000 75%,#b563ce 0),
+      conic-gradient(at 10% 50%,#0000 75%,#b563ce 0) calc(1*30px) calc(3*30px),
+      conic-gradient(at 10% 50%,#0000 75%,#b563ce 0) calc(2*30px) calc(1*30px),
+      conic-gradient(at 10% 50%,#0000 75%,#b563ce 0) calc(3*30px) calc(4*30px),
+      conic-gradient(at 10% 50%,#0000 75%,#b563ce 0) calc(4*30px) calc(2*30px),
+      conic-gradient(at 50% 10%,#0000 75%,#b563ce 0) 0 calc(4*30px),
+      conic-gradient(at 50% 10%,#0000 75%,#b563ce 0) calc(1*30px) calc(2*30px),
+      conic-gradient(at 50% 10%,#0000 75%,#b563ce 0) calc(2*30px) 0,
+      conic-gradient(at 50% 10%,#0000 75%,#b563ce 0) calc(3*30px) calc(3*30px),
+      conic-gradient(at 50% 10%,#0000 75%,#b563ce 0) calc(4*30px) calc(1*30px),
+      #3c0000;
+background-size: 150px 150px;
+}
+.fighting {
+    background:
+      conic-gradient(at 10% 50%,#0000 75%,#d94256 0),
+      conic-gradient(at 10% 50%,#0000 75%,#d94256 0) calc(1*30px) calc(3*30px),
+      conic-gradient(at 10% 50%,#0000 75%,#d94256 0) calc(2*30px) calc(1*30px),
+      conic-gradient(at 10% 50%,#0000 75%,#d94256 0) calc(3*30px) calc(4*30px),
+      conic-gradient(at 10% 50%,#0000 75%,#d94256 0) calc(4*30px) calc(2*30px),
+      conic-gradient(at 50% 10%,#0000 75%,#d94256 0) 0 calc(4*30px),
+      conic-gradient(at 50% 10%,#0000 75%,#d94256 0) calc(1*30px) calc(2*30px),
+      conic-gradient(at 50% 10%,#0000 75%,#d94256 0) calc(2*30px) 0,
+      conic-gradient(at 50% 10%,#0000 75%,#d94256 0) calc(3*30px) calc(3*30px),
+      conic-gradient(at 50% 10%,#0000 75%,#d94256 0) calc(4*30px) calc(1*30px),
+      #cc0000;
+background-size: 150px 150px;
+}
+.psychic {
+    background:
+      conic-gradient(at 10% 50%,#0000 75%,#f87c7a 0),
+      conic-gradient(at 10% 50%,#0000 75%,#f87c7a 0) calc(1*30px) calc(3*30px),
+      conic-gradient(at 10% 50%,#0000 75%,#f87c7a 0) calc(2*30px) calc(1*30px),
+      conic-gradient(at 10% 50%,#0000 75%,#f87c7a 0) calc(3*30px) calc(4*30px),
+      conic-gradient(at 10% 50%,#0000 75%,#f87c7a 0) calc(4*30px) calc(2*30px),
+      conic-gradient(at 50% 10%,#0000 75%,#f87c7a 0) 0 calc(4*30px),
+      conic-gradient(at 50% 10%,#0000 75%,#f87c7a 0) calc(1*30px) calc(2*30px),
+      conic-gradient(at 50% 10%,#0000 75%,#f87c7a 0) calc(2*30px) 0,
+      conic-gradient(at 50% 10%,#0000 75%,#f87c7a 0) calc(3*30px) calc(3*30px),
+      conic-gradient(at 50% 10%,#0000 75%,#f87c7a 0) calc(4*30px) calc(1*30px),
+      #a38686;
+background-size: 150px 150px;
+
+
+}
+.dark {
+    background:
+      conic-gradient(at 10% 50%,#0000 75%,#19191b 0),
+      conic-gradient(at 10% 50%,#0000 75%,#19191b 0) calc(1*30px) calc(3*30px),
+      conic-gradient(at 10% 50%,#0000 75%,#19191b 0) calc(2*30px) calc(1*30px),
+      conic-gradient(at 10% 50%,#0000 75%,#19191b 0) calc(3*30px) calc(4*30px),
+      conic-gradient(at 10% 50%,#0000 75%,#19191b 0) calc(4*30px) calc(2*30px),
+      conic-gradient(at 50% 10%,#0000 75%,#19191b 0) 0 calc(4*30px),
+      conic-gradient(at 50% 10%,#0000 75%,#19191b 0) calc(1*30px) calc(2*30px),
+      conic-gradient(at 50% 10%,#0000 75%,#19191b 0) calc(2*30px) 0,
+      conic-gradient(at 50% 10%,#0000 75%,#19191b 0) calc(3*30px) calc(3*30px),
+      conic-gradient(at 50% 10%,#0000 75%,#19191b 0) calc(4*30px) calc(1*30px),
+      #050532;
+background-size: 150px 150px;
+
+
+}
+.rock {
+    background:
+      conic-gradient(at 10% 50%,#0000 75%,#6e6d6d 0),
+      conic-gradient(at 10% 50%,#0000 75%,#6e6d6d 0) calc(1*30px) calc(3*30px),
+      conic-gradient(at 10% 50%,#0000 75%,#6e6d6d 0) calc(2*30px) calc(1*30px),
+      conic-gradient(at 10% 50%,#0000 75%,#6e6d6d 0) calc(3*30px) calc(4*30px),
+      conic-gradient(at 10% 50%,#0000 75%,#6e6d6d 0) calc(4*30px) calc(2*30px),
+      conic-gradient(at 50% 10%,#0000 75%,#6e6d6d 0) 0 calc(4*30px),
+      conic-gradient(at 50% 10%,#0000 75%,#6e6d6d 0) calc(1*30px) calc(2*30px),
+      conic-gradient(at 50% 10%,#0000 75%,#6e6d6d 0) calc(2*30px) 0,
+      conic-gradient(at 50% 10%,#0000 75%,#6e6d6d 0) calc(3*30px) calc(3*30px),
+      conic-gradient(at 50% 10%,#0000 75%,#6e6d6d 0) calc(4*30px) calc(1*30px),
+      #5f5f5f;
+background-size: 150px 150px;
+
+
+}
+.bug {
+    background:
+      conic-gradient(at 10% 50%,#0000 75%,#9dc130 0),
+      conic-gradient(at 10% 50%,#0000 75%,#9dc130 0) calc(1*30px) calc(3*30px),
+      conic-gradient(at 10% 50%,#0000 75%,#9dc130 0) calc(2*30px) calc(1*30px),
+      conic-gradient(at 10% 50%,#0000 75%,#9dc130 0) calc(3*30px) calc(4*30px),
+      conic-gradient(at 10% 50%,#0000 75%,#9dc130 0) calc(4*30px) calc(2*30px),
+      conic-gradient(at 50% 10%,#0000 75%,#9dc130 0) 0 calc(4*30px),
+      conic-gradient(at 50% 10%,#0000 75%,#9dc130 0) calc(1*30px) calc(2*30px),
+      conic-gradient(at 50% 10%,#0000 75%,#9dc130 0) calc(2*30px) 0,
+      conic-gradient(at 50% 10%,#0000 75%,#9dc130 0) calc(3*30px) calc(3*30px),
+      conic-gradient(at 50% 10%,#0000 75%,#9dc130 0) calc(4*30px) calc(1*30px),
+      #1c951c;
+background-size: 150px 150px;
+
+
+}
+.ghost {
+    background:
+      conic-gradient(at 10% 50%,#0000 75%,rgba(104, 112, 196, 0.61) 0),
+      conic-gradient(at 10% 50%,#0000 75%,rgba(104, 112, 196, 0.61) 0) calc(1*30px) calc(3*30px),
+      conic-gradient(at 10% 50%,#0000 75%,rgba(104, 112, 196, 0.61) 0) calc(2*30px) calc(1*30px),
+      conic-gradient(at 10% 50%,#0000 75%,rgba(104, 112, 196, 0.61) 0) calc(3*30px) calc(4*30px),
+      conic-gradient(at 10% 50%,#0000 75%,rgba(104, 112, 196, 0.61) 0) calc(4*30px) calc(2*30px),
+      conic-gradient(at 50% 10%,#0000 75%,rgba(104, 112, 196, 0.61) 0) 0 calc(4*30px),
+      conic-gradient(at 50% 10%,#0000 75%,rgba(104, 112, 196, 0.61) 0) calc(1*30px) calc(2*30px),
+      conic-gradient(at 50% 10%,#0000 75%,rgba(104, 112, 196, 0.61) 0) calc(2*30px) 0,
+      conic-gradient(at 50% 10%,#0000 75%,rgba(104, 112, 196, 0.61) 0) calc(3*30px) calc(3*30px),
+      conic-gradient(at 50% 10%,#0000 75%,rgba(104, 112, 196, 0.61) 0) calc(4*30px) calc(1*30px),
+      #ffffff;
+background-size: 150px 150px; ;
+}
+.steel {
+    background:
+      conic-gradient(at 10% 50%,#0000 75%,#5596a4 0),
+      conic-gradient(at 10% 50%,#0000 75%,#5596a4 0) calc(1*30px) calc(3*30px),
+      conic-gradient(at 10% 50%,#0000 75%,#5596a4 0) calc(2*30px) calc(1*30px),
+      conic-gradient(at 10% 50%,#0000 75%,#5596a4 0) calc(3*30px) calc(4*30px),
+      conic-gradient(at 10% 50%,#0000 75%,#5596a4 0) calc(4*30px) calc(2*30px),
+      conic-gradient(at 50% 10%,#0000 75%,#5596a4 0) 0 calc(4*30px),
+      conic-gradient(at 50% 10%,#0000 75%,#5596a4 0) calc(1*30px) calc(2*30px),
+      conic-gradient(at 50% 10%,#0000 75%,#5596a4 0) calc(2*30px) 0,
+      conic-gradient(at 50% 10%,#0000 75%,#5596a4 0) calc(3*30px) calc(3*30px),
+      conic-gradient(at 50% 10%,#0000 75%,#5596a4 0) calc(4*30px) calc(1*30px),
+      #797979;
+background-size: 150px 150px;
+
+
+}
+.dragon {
+    background:
+      conic-gradient(at 10% 50%,#0000 75%,#0773c7 0),
+      conic-gradient(at 10% 50%,#0000 75%,#0773c7 0) calc(1*30px) calc(3*30px),
+      conic-gradient(at 10% 50%,#0000 75%,#0773c7 0) calc(2*30px) calc(1*30px),
+      conic-gradient(at 10% 50%,#0000 75%,#0773c7 0) calc(3*30px) calc(4*30px),
+      conic-gradient(at 10% 50%,#0000 75%,#0773c7 0) calc(4*30px) calc(2*30px),
+      conic-gradient(at 50% 10%,#0000 75%,#0773c7 0) 0 calc(4*30px),
+      conic-gradient(at 50% 10%,#0000 75%,#0773c7 0) calc(1*30px) calc(2*30px),
+      conic-gradient(at 50% 10%,#0000 75%,#0773c7 0) calc(2*30px) 0,
+      conic-gradient(at 50% 10%,#0000 75%,#0773c7 0) calc(3*30px) calc(3*30px),
+      conic-gradient(at 50% 10%,#0000 75%,#0773c7 0) calc(4*30px) calc(1*30px),
+      #e73b3b;
+background-size: 150px 150px; ;
+}
+.fairy {
+    background:
+      conic-gradient(at 10% 50%,#0000 75%,#ef97e6 0),
+      conic-gradient(at 10% 50%,#0000 75%,#ef97e6 0) calc(1*30px) calc(3*30px),
+      conic-gradient(at 10% 50%,#0000 75%,#ef97e6 0) calc(2*30px) calc(1*30px),
+      conic-gradient(at 10% 50%,#0000 75%,#ef97e6 0) calc(3*30px) calc(4*30px),
+      conic-gradient(at 10% 50%,#0000 75%,#ef97e6 0) calc(4*30px) calc(2*30px),
+      conic-gradient(at 50% 10%,#0000 75%,#ef97e6 0) 0 calc(4*30px),
+      conic-gradient(at 50% 10%,#0000 75%,#ef97e6 0) calc(1*30px) calc(2*30px),
+      conic-gradient(at 50% 10%,#0000 75%,#ef97e6 0) calc(2*30px) 0,
+      conic-gradient(at 50% 10%,#0000 75%,#ef97e6 0) calc(3*30px) calc(3*30px),
+      conic-gradient(at 50% 10%,#0000 75%,#ef97e6 0) calc(4*30px) calc(1*30px),
+      rgba(209, 60, 232, 0.86);
+background-size: 150px 150px;
+}

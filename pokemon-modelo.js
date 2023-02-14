@@ -11,3 +11,10 @@ class Pokemon {
     stat =[];
 }
   
+class Pokemon2 {
+
+}
+
+class Pokemon3 {
+    
+}

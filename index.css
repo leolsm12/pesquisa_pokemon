@@ -1,11 +1,26 @@
 body {
     margin: 0;
-    background-color:#818497 ;  
+    background-color:#818497 ;
+    background-image:url("img/pokemon_wallpaper01_1680.jpg") ; 
+    background-attachment:fixed;
+    background-position: center center;
+    
+    
 }
 header {
     display: flex;
     justify-content: center;
     align-items: center;
+}
+footer{
+    position: fixed;
+    height: 25px;
+    background-color: #000;
+    bottom: 0;
+    width: 100%;
+    color: #fff;
+    font-weight:bold;
+    text-align: center;
 }
 .area > button{
     width: 25%;
@@ -20,7 +35,14 @@ header {
     height: 40px;
     font-size: 25px;
     margin-left: 37.5%;
+    margin-top: 40px;
     
+    
+}
+#letras{
+    color:#000;
+    font-weight: bold;
+    font-size: 15px;
 }
 
 .pontos {
@@ -34,25 +56,17 @@ header {
 }
 .card {
     margin-top: 20px;
-    background: #b8e1fc;
-    background: -moz-linear-gradient(left, #b8e1fc 0%, #a9d2f3 10%, #90bae4 25%, #90bcea 37%, #90bff0 41%, #6ba8e5 46%, #6ba8e5 57%, #a2daf5 83%, #bdf3fd 100%);
-    background: -webkit-linear-gradient(left, #b8e1fc 0%,#a9d2f3 10%,#90bae4 25%,#90bcea 37%,#90bff0 41%,#6ba8e5 46%,#6ba8e5 57%,#a2daf5 83%,#bdf3fd 100%);
-    background: linear-gradient(to right, #b8e1fc 0%,#a9d2f3 10%,#90bae4 25%,#90bcea 37%,#90bff0 41%,#6ba8e5 46%,#6ba8e5 57%,#a2daf5 83%,#bdf3fd 100%);
     box-shadow: 0px 5px 10px 11px #000;
     margin-bottom: 40px;
 }
 
-.types{
+.types {
     list-style-type: none;
 }
-footer{
-    
-    height: 25px;
-    background-color: #000;
-    position: fixed;
-    bottom: 0;
-    width: 100%;
-    color: #fff;
-    font-weight:bold;
-    text-align: center;
+#nom {
+    font-size: 30px;
+    font-weight: bold;
+    color: #000;
 }
+
+
