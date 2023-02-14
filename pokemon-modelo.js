@@ -12,9 +12,15 @@ class Pokemon {
 }
   
 class Pokemon2 {
-
+    nome ;
+    photo;
+    number;
+    
 }
 
 class Pokemon3 {
-    
+    nome ;
+    photo;
+    number;
+
 }

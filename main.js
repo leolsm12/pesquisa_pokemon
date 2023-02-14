@@ -26,10 +26,8 @@ fetch(url)
 
       const [type] = types
 
-      const urlevo = jsonBody.species.url
-      
+      const urlevo = jsonBody.species.url     
 
-      
       pokemon.stat = stat
       pokemon.stats = stats
 
@@ -38,11 +36,7 @@ fetch(url)
      
       pokemon.photo = jsonBody.sprites.other.dream_world.front_default
       pokemon.weight = jsonBody.weight
-      pokemon.height = jsonBody.height
-
-      
-
-
+      pokemon.height = jsonBody.height    
 
       console.log(pokemon)
 
@@ -118,16 +112,9 @@ fetch(url)
 
       })
 })
-    
- 
-
-    
+       
     })
     .catch(error => {console.error(error)});
     input.value = '';
-
-   
-    
-    
-    
+          
 })
