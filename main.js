@@ -1,4 +1,6 @@
 
+
+const pokemonList = document.getElementById('pokemonList')
 const input = document.getElementById("nome");
 const button = document.getElementById("pesquisa");
 const pokemon = []
@@ -40,8 +42,8 @@ fetch(url)
 
       console.log(pokemon)
 
-      const newDiv = document.createElement('div');
-      newDiv.innerHTML = 
+      
+      const newDiv = 
       `
       <div id="pokemonMod" class="pokemon">
         <div ${pokemon.types.map((type) => `class="card ${type}"`)} style="width: 18rem;">
@@ -86,7 +88,7 @@ fetch(url)
       </div>
      
       `;
-      document.body.appendChild(newDiv);
+      pokemonList.innerHTML += newDiv
 
     fetch(urlevo)
     .then((response) => response.json())
