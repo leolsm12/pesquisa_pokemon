@@ -88,7 +88,7 @@ fetch(url)
       </div>
      
       `;
-      pokemonList.innerHTML += newDiv
+      pokemonList.innerHTML = newDiv
 
     fetch(urlevo)
     .then((response) => response.json())
@@ -112,3 +112,4 @@ fetch(url)
     input.value = '';
           
 })
+
