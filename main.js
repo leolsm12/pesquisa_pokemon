@@ -44,7 +44,6 @@ fetch(url)
 
       console.log(pokemon)
 
-      
       const newDiv = 
       `
       <div id="pokemonMod" class="pokemon">
@@ -101,12 +100,26 @@ fetch(url)
       .then((response) => response.json())
       .then(json3Body => {
         
-        const evolutions1 = json3Body.chain.evolves_to[0].species.name
-        const evolutions2 = json3Body.chain.evolves_to[0].evolves_to[0].species.name
-        const evolutions3 = json3Body.chain.species.name
+
+        const especies = json3Body.chain.evolves_to
+        pokemon.especies = especies
+        console.log(especies)
+        
+        for (const item of especies) {
+          pokemon.evolutions.push(item.species.name)
+         
+        }
+
+        console.log(json3Body)
+        const especies2 = json3Body.chain.species.name
+        const especies3 = json3Body.chain.evolves_to[0].evolves_to[0].species.name
+        
+        pokemon.evolutions.push(especies2,especies3)
+        pokemon.evolutions = pokemon.evolutions.filter(valor => valor !== `${pokemon.name}`);
        
-        pokemon.evolutions = [evolutions1 , evolutions2 , evolutions3]      
      })
+
+ 
 })
     
     })

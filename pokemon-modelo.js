@@ -10,5 +10,9 @@ class Pokemon {
     height;
     stats = [];
     stat =[];
+    especies =[];
+    
 }
+
+
   
