@@ -42,7 +42,7 @@ footer{
     
 }
 #letras{
-    color:#a3a3a3;
+    color:#000000;
     font-weight: bold;
     font-size: 15px;
 }
@@ -68,5 +68,5 @@ footer{
 #nom {
     font-size: 30px;
     font-weight: bold;
-    color: #a3a3a3;
+    color: #000000;
 }

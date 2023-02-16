@@ -18,6 +18,7 @@ button.addEventListener("click", function() {
 fetch(url)
     .then((response) => response.json())
     .then(jsonBody => {
+      console.log(jsonBody)
       const pokemon = new Pokemon()
       pokemon.number = jsonBody.id
       pokemon.name = jsonBody.name
@@ -35,8 +36,9 @@ fetch(url)
 
       pokemon.types = types
       pokemon.type = type
-     
+      
       pokemon.photo = jsonBody.sprites.other.dream_world.front_default
+      pokemon.photo2 = jsonBody.sprites.other["official-artwork"].front_shiny
       pokemon.weight = jsonBody.weight
       pokemon.height = jsonBody.height    
 
@@ -47,7 +49,7 @@ fetch(url)
       `
       <div id="pokemonMod" class="pokemon">
         <div ${pokemon.types.map((type) => `class="card ${type}"`)} style="width: 18rem;">
-            <img src="${pokemon.photo}" alt="${pokemon.name}" onerror="this.onerror=null;this.src='img/Logo-Pokebola-Pokémon-PNG.png';">
+            <img src="${pokemon.photo}" alt="${pokemon.name}" onerror="this.onerror=null;this.src='${pokemon.photo2}';">
             <div class="card-body">
               <div class="container text-center">
                 <div class="row">

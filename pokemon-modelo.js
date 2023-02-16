@@ -4,6 +4,7 @@ class Pokemon {
     type;
     types = [];
     photo;
+    photo2;
     evolutions = []; 
     weight;
     height;
