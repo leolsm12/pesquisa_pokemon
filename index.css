@@ -55,6 +55,10 @@ footer{
     display: flex;
     justify-content: center;
     align-items: center;
+    width: 500px;
+    margin:0 auto;
+    
+    
 }
 .card {
     margin-top: 20px;
@@ -70,3 +74,4 @@ footer{
     font-weight: bold;
     color: #000000;
 }
+

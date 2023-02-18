@@ -1,5 +1,9 @@
-const Evolucoes = pokemon.evolucoes
-console.log(Evolucoes)
+
+
+
+
+function pesquisa() {
+console.log(pokemon)
 
 const evo = `https://pokeapi.co/api/v2/pokemon/${Evolucoes}`
 fetch(evo)
@@ -9,8 +13,13 @@ fetch(evo)
 
     })
 
-
-
+        
+    for (const item of Evolucoes) {
+      console.log(item)
+      
+     
+    }
+  }
 // const evolucoes = 
 // `
 

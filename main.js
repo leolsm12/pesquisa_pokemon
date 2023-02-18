@@ -99,27 +99,69 @@ fetch(url)
       fetch(cadeiaDeEvo)
       .then((response) => response.json())
       .then(json3Body => {
-        
+        console.log(json3Body)
 
         const especies = json3Body.chain.evolves_to
         pokemon.especies = especies
-        console.log(especies)
-        
+                
         for (const item of especies) {
           pokemon.evolutions.push(item.species.name)
          
         }
-
-        console.log(json3Body)
+        
         const especies2 = json3Body.chain.species.name
         const especies3 = json3Body.chain.evolves_to[0].evolves_to[0].species.name
         
         pokemon.evolutions.push(especies2,especies3)
         pokemon.evolutions = pokemon.evolutions.filter(valor => valor !== `${pokemon.name}`);
+
+        console.log(pokemon.evolutions)
+
+        for (const pk of pokemon.evolutions) {
+                    
+          fetch(`https://pokeapi.co/api/v2/pokemon/${pk}`)
+          .then((response) => response.json())
+          .then(json4Body => {
+            const pokemons = new Pokemons()
+            pokemons.numbers = json4Body.id
+            pokemons.names = json4Body.name
+            pokemons.photos = json4Body.sprites.other.dream_world.front_default
+            pokemons.photos2 = json4Body.sprites.other["official-artwork"].front_shiny
+            const types2 = jsonBody.types.map((typeSlot) => typeSlot.type.name)
+            const [type2] = types2
+
+            pokemons.types2 = types2
+            pokemons.type2 = type2
+
+            console.log(pokemons)  
+            const newpk =`
+            
+            <div id="evos" ${pokemons.types2.map((type2) => `class="card ${type2}"`)} >
+              <img id="imgevo"src="${pokemons.photos}" class="card-img-top" alt="${pokemons.names}" onerror="this.onerror=null;this.src='${pokemons.photos2}';">
+              <div class="card-body">
+              <div class="container text-center">
+                <div class="row">
+                  <div class="col">
+                    <h2 id="numeroevo">#${pokemons.numbers}</h2>
+                  </div>
+                  <div class="col">
+                    <h2 id="nomeevo">${pokemons.names}</h2>
+                  </div>
+                </div>
+              </div>
+            </div>
+            `
+            evo.innerHTML += newpk
+        })}
+        evo.innerHTML = "";
+
+        
+        
        
      })
-
- 
+      
+             
+   
 })
     
     })

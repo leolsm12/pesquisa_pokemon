@@ -9,6 +9,7 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
     <link href="cores.css" rel="stylesheet" >
     <link href="index.css" rel="stylesheet">
+    <link href="evolutions.css" rel="stylesheet">
     <link href="responsive.css" rel="stylesheet">
     <title>Pesquisa De Pokemon</title>
 </head>
@@ -21,13 +22,19 @@
         <div >
             <input id="nome"type="text" class="form-control" placeholder="Pokémon" aria-label="Username" aria-describedby="addon-wrapping">
         </div>
-            <button id="pesquisa" type="button" class="btn btn-outline-secondary">Pesquisar</button>           
-        </div> 
-        <div id="pokemonList">
-            <!-- ..... Pokemon ..... -->
+            <button  id="pesquisa" type="button" class="btn btn-outline-secondary">Pesquisar</button>           
         </div>
-        <div id="evo1"></div>
-        <div id="evo2"></div>    
+        <div class="container text-center">
+            <div class="row">
+              <div class="col">
+                  <div id="pokemonList"></div>
+              </div>
+              <div class="col">
+               <div id="evo"></div>
+              </div>
+            </div>
+        </div> 
+
     </main>
     <footer>
         <p> ©LeoLsm12 2023</p>
@@ -35,6 +42,7 @@
     
     <script src="main.js"></script> 
     <script src="pokemon-modelo.js"></script>
+    
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js" integrity="sha384-mQ93GR66B00ZXjt0YO5KlohRA5SY2XofN4zfuZxLkoj1gXtW8ANNCe9d5Y3eG5eD" crossorigin="anonymous"></script>
 </body>
 </html>

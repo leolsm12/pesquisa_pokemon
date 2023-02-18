@@ -13,6 +13,16 @@ class Pokemon {
     especies =[];
     
 }
+class Pokemons {
+    names ;
+    numbers;
+    photos  ;
+    photos2 ;
+    type2;
+    types2 = [];
+}
+    
+
 
 
   
