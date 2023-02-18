@@ -110,10 +110,15 @@ fetch(url)
         }
         
         const especies2 = json3Body.chain.species.name
+        try{
         const especies3 = json3Body.chain.evolves_to[0].evolves_to[0].species.name
-        
         pokemon.evolutions.push(especies2,especies3)
         pokemon.evolutions = pokemon.evolutions.filter(valor => valor !== `${pokemon.name}`);
+        }catch(erro){
+          console.log("nada consta")
+        }
+        
+
 
         console.log(pokemon.evolutions)
 
@@ -137,9 +142,9 @@ fetch(url)
             const newpk =`
             
             <div id="evos" ${pokemons.types2.map((type2) => `class="card ${type2}"`)} >
-              <img id="imgevo"src="${pokemons.photos}" class="card-img-top" alt="${pokemons.names}" onerror="this.onerror=null;this.src='${pokemons.photos2}';">
+              <img id="imgevo"src="${pokemons.photos}" " alt="${pokemons.names}" onerror="this.onerror=null;this.src='${pokemons.photos2}';">
               <div class="card-body">
-              <div class="container text-center">
+              <div class="container text-center text">
                 <div class="row">
                   <div class="col">
                     <h2 id="numeroevo">#${pokemons.numbers}</h2>
