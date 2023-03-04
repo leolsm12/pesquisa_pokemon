@@ -1,11 +1,28 @@
 
-
 const pokemonList = document.getElementById('pokemonList')
 const input = document.getElementById("nome");
 const button = document.getElementById("pesquisa");
 const pokemon = []
 
-button.addEventListener("click", function() {  
+
+
+button.addEventListener("click", function() { 
+  pesquisaPokemon()
+});
+input.addEventListener("keyup", function(event) {
+  if (event.key === "Enter") {
+    event.preventDefault();
+    pesquisaPokemon();
+  }
+});
+function definirValor() {
+  var valor = pokemons;
+  document.getElementById("nome").value = valor;
+}
+
+
+
+function pesquisaPokemon() {
  
   input.value = input.value.toLowerCase();
   input.value = input.value.trim().replace(/\s+/g, '-');
@@ -13,15 +30,18 @@ button.addEventListener("click", function() {
 
   const searchTerm = input.value;
   const url = `https://pokeapi.co/api/v2/pokemon/${searchTerm}`; 
-  console.log(url)
+  
  
 fetch(url)
     .then((response) => response.json())
     .then(jsonBody => {
       console.log(jsonBody)
       const pokemon = new Pokemon()
+
+      pokemon.name = jsonBody.name.replace("-", " ");
+      console.log(pokemon.name);
+
       pokemon.number = jsonBody.id
-      pokemon.name = jsonBody.name
 
       const stats = jsonBody.stats.map((statsBase_stat) => statsBase_stat.stat.name)
       const stat = jsonBody.stats.map((statsBase_stat) => statsBase_stat.base_stat)
@@ -39,7 +59,12 @@ fetch(url)
       
       pokemon.photo = jsonBody.sprites.other.dream_world.front_default
       pokemon.photo2 = jsonBody.sprites.other["official-artwork"].front_shiny
-      pokemon.weight = jsonBody.weight
+      
+      const peso = jsonBody.weight.toString();
+      pokemon.weight = peso.substring(0, peso.length - 1); + ", " + peso.charAt(peso.length - 1);
+      console.log(pokemon.weight);
+
+      // pokemon.weight = jsonBody.weight
       pokemon.height = jsonBody.height    
 
       console.log(pokemon)
@@ -103,23 +128,19 @@ fetch(url)
 
         const especies = json3Body.chain.evolves_to
         pokemon.especies = especies
-                
+                       
         for (const item of especies) {
           pokemon.evolutions.push(item.species.name)
-         
         }
-        
         const especies2 = json3Body.chain.species.name
+        pokemon.evolutions.push(especies2)
         try{
         const especies3 = json3Body.chain.evolves_to[0].evolves_to[0].species.name
-        pokemon.evolutions.push(especies2,especies3)
-        pokemon.evolutions = pokemon.evolutions.filter(valor => valor !== `${pokemon.name}`);
+        pokemon.evolutions.push(especies3)
         }catch(erro){
           console.log("nada consta")
         }
-        
-
-
+        pokemon.evolutions = pokemon.evolutions.filter(valor => valor !== `${pokemon.name}`);
         console.log(pokemon.evolutions)
 
         for (const pk of pokemon.evolutions) {
@@ -140,38 +161,34 @@ fetch(url)
 
             console.log(pokemons)  
             const newpk =`
-            
-            <div id="evos" ${pokemons.types2.map((type2) => `class="card ${type2}"`)} >
-              <img id="imgevo"src="${pokemons.photos}" " alt="${pokemons.names}" onerror="this.onerror=null;this.src='${pokemons.photos2}';">
-              <div class="card-body">
-              <div class="container text-center text">
-                <div class="row">
-                  <div class="col">
-                    <h2 id="numeroevo">#${pokemons.numbers}</h2>
-                  </div>
-                  <div class="col">
-                    <h2 id="nomeevo">${pokemons.names}</h2>
+           
+              <div id="evos" ${pokemons.types2.map((type2) => `class="card ${type2}"`)} >
+                <img id="imgevo"  src="${pokemons.photos}" " alt="${pokemons.names}" onerror="this.onerror=null;this.src='${pokemons.photos2}';">
+                <div class="card-body">
+                <div class="container text-center text">
+                  <div class="row">
+                    <div class="col">
+                      <h2 id="numeroevo">#${pokemons.numbers}</h2>
+                    </div>
+                    <div class="col">
+                      <h2 id="nomeevo">${pokemons.names}</h2>
+                    </div>
                   </div>
                 </div>
               </div>
-            </div>
-            `
-            evo.innerHTML += newpk
-        })}
-        evo.innerHTML = "";
-
-        
-        
-       
-     })
-      
              
-   
+            `
+            evo.innerHTML += newpk     
+        })}
+        evo.innerHTML = ""; 
+     })
+     
+
 })
-    
+
     })
     .catch(error => {console.error(error)});
-    input.value = '';
-          
-})
+    input.value = ''; 
+    
 
+}
